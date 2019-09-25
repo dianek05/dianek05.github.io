@@ -1,0 +1,11 @@
+#background-img {
+    background-color: firebrick;
+    background-image: url('../img/wiewior.jpeg');
+    background-blend-mode: difference;
+/* background repeat-y */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}

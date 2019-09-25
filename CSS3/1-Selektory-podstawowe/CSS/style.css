@@ -1,0 +1,31 @@
+* {
+    color: darkgreen;
+}
+
+p {
+    color: darkmagenta;
+}
+
+#kasia {
+    background-color: slateblue;
+}
+
+div.lorak {
+    color: blue;
+}
+
+ul a {
+    background-color: pink;
+}
+
+a > span {
+    color: yellow;
+}
+
+li#pierwszy ~ li {
+    background-color: orangered;
+}
+
+li#pierwszy + li {
+    background-color: firebrick;
+}
