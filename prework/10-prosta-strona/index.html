@@ -6,52 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prosta strona</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <nav id="menu">
-        <li class="menu-item"><a href="#about">About us</a></li>
+        <li class="menu-item"><a href="#aboutus">About us</a></li>
         <li class="menu-item"><a href="#skills">Skills</a></li>
-        <li class="menu-item"><a href="#portfolio">Portolio</a></li>
+        <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
         <li class="menu-item"><a href="#contact">Contact</a></li>
     </nav>
+
     <header>
-        <h1 id="main-header-text">Moja własna strona</h2>
+        <h1 id="main-header-text">Moja własna strona</h1>
     </header>
 
-    <section id="About-us">
+    <section id="Aboutus">
         <h2 id="about-header">About us</h2>
         <p class="about-content">Bardzo początkujący uczeń programowania: Front-end. Z zawodu project manager w banku.
             Odpowiadała za realizację projektów UX-owych, strategicznych oraz rozwój produktów e-commerce. Prywatnie
             biegaczka, rowerzystka i wagabunda.</p>
     </section>
 
-    <section id="Skills">
-        <h2 id="skills">Skills</h2>
+    <br />
+
+    <section id="skills">
+        <h2 id="skills-header">Umiejetności</h2>
         <div class="sq1"></div>
         <div class="sq2"></div>
         <div class="sq3"></div>
         <div class="sq4"></div>
     </section>
-    <br />
 
-    <section id="Portolio">
-        <h2 id="skills">Skills</h2>
-        <div class="sq1"></div>
-        <div class="sq2"></div>
-        <div class="sq3"></div>
+    <section class="portfolio">
+        <h2 class="portfolio-content">Portfolio</h2>
+        <div class="sq5"></div>
+        <div class="sq5"></div>
+        <div class="sq7"></div>
     </section>
-    <br />
 
-    <footer id="contact-header">
-        <h3 id="contact-content">Kontakt</h3>
-        <address id="contact-content">
-            Diana Lach<br />
-            Obzezna<br />
+    <footer id="contact">
+        <h3 id="contact-content">Diana Lach</h3>
+        <address class="contact-content">
+            ul. Obrzeżna<br />
             Warszawa<br />
             <a href="mailto:diana.lach@yahoo.com">diana.lach@yahoo.com</a>
         </address>
-        </footer>
+        <form action="https://formspree.io/diana.lach@yahoo.com" method="post"></form>
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name" placeholder="Podaj swoje imię"><br>
+        <label for="subject">Temat wiadomości:</label>
+        <input type="text" name="subject" id="subject" placeholder="Temat wiadomości"><br>
+        <label for="messange">Twoja wiadomość:</label>
+        <textarea name="messange" id="messange" placeholder="Twoja wiadmość" cols="30" rows="10"></textarea><br><br>
+        <input type="submit" value="Wyślij">
+
+    </footer>
+
 </body>
 
 </html>
