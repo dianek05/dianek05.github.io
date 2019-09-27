@@ -35,9 +35,15 @@
 }
 
 .sq6 {
-    background-color: cornsilk;
+    background-color: palevioletred;
 }
 
 .sq7 {
     background-color: burlywood;
+}
+
+form input[type='submit'] {
+    background-color: yellow;
+    border: 1px black;
+    color: blue;
 }
