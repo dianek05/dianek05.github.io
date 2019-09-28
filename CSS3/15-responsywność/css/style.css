@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.box {
+    font-size: 15px;
+    width: 20%;
+    padding: 30px;
+    float: left;
+    font-family: sans-serif;
+    border: 10px solid green;
+}
+
+@media(max-width:992px) {
+    .box {
+        width: 50%;
+        background-color: chartreuse;
+        color: white;
+        font-size: 13px;
+    }
+}
+
+@media(max-width:768px) {
+    .box {
+            width: 100%;
+            background-color: orange;
+            color: red;
+            border: 1px solid green;
+        }
+    }
+}
