@@ -1,0 +1,22 @@
+.container {
+    border: 1px dotted olive;
+    display: flex;
+    flex-wrap: wrap;
+    height: 700px;
+    align-content: flex-end;
+}
+
+.flex-item {
+    background-color: darkgoldenrod;
+    color: black;
+    border: olive 1px solid;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 200px;
+    flex-basis: 27%;
+}
+
+.flex-item:nth-child(2n-1) {
+    background-color: brown;
+    max-height: 100px;
+}
