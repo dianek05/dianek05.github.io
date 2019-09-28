@@ -1,5 +1,5 @@
 #gallery {
-    width: 800%;
+    width: 80%;
 }
 
 figure {
@@ -8,7 +8,7 @@ figure {
 
 /* large devices */
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:993px) {
 	#gallery {
 		width: 90%;
 	}
@@ -16,9 +16,9 @@ figure {
 
 /* medium devices */
 
-@media screen and (min-width:768px) and (max-width: 992px) {
+@media screen and (min-width:769px) and (max-width: 992px) {
 	figure {
-		width:50%;
+		width:49%;
 	}
 }
 
@@ -35,5 +35,8 @@ figure {
 @media screen and (max-width:480px) {
     #gallery {
         width:100%;
+    }
+    figure {
+        width: 100%;
     }
 }
