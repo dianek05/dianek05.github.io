@@ -52,16 +52,19 @@ span::before {
     border: 1px solid #007bff;
     margin: auto;
     padding: 1.5em 2em;
-    display: inline-flex;
+    display: inline-block;
     color:#333;
     justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 nav {
     background-color: #007bff;
     height: 4em;
     width: 100%;
+    left:0;
+    top:0;
     position: relative;
     z-index: -1;
 }
@@ -77,12 +80,14 @@ nav {
     margin: 0;
 }
 
-.menu-item {
+.menu-item, a {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
-    display: inline-block;
-    padding: 10px;
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
