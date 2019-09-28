@@ -1,0 +1,18 @@
+.container {
+    border: 1px dotted olive;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background-color: darkgoldenrod;
+    color: black;
+    border: olive 1px solid;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 5%;
+}
+
+.flex-item:nth-child(2n-1) {
+    background-color: brown;
+}
