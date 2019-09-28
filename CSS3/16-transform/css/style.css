@@ -1,0 +1,20 @@
+img {
+    height: 300px;
+    margin-bottom: 150px;
+    transition: all 2s;
+}
+
+/* rotate */
+
+.rotate img:hover {
+    transform: rotate(45deg);
+}
+
+.translate img:hover {
+    transform:translate(300px, 150px);
+}
+
+.scale img:hover {
+    transform:scale(0.5);
+    margin-left: 50px;
+}
