@@ -1,0 +1,29 @@
+#gallery {
+    width: 800%;
+}
+
+figure {
+    width:33%;
+}
+
+/* large devices */
+
+@media screen and (max-width:992px) {
+	#gallery {
+		width: 90%;
+	}
+}
+
+/* medium devices */
+
+@media(max-width:768px) {
+	figure img {
+		width:50%;
+	}
+}
+
+@media(max-width:480px) {
+	figure img {
+		width: 33%;
+	}
+}
