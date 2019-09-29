@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75de697617.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -43,18 +44,19 @@
             <h2>O mnie</h2>
             <hr>
         </div>
-        <div class="aboutme">
+        <div class="aboutme-photo">
             <img src="img/about.jpg" title="myphoto" alt="myphoto"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor dignissimos consequatur accusamus
-            repellendus voluptate sed quaerat, deserunt voluptates velit obcaecati eos excepturi sapiente aspernatur
-            incidunt. Quisquam quia ipsam, natus iste autem est ut deleniti unde laudantium vero ea dolores?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, dolorum illo architecto fugit corrupti
-            aperiam. Facilis ducimus, nobis ex corrupti accusantium mollitia eveniet saepe tenetur autem numquam illum
-            fuga dolorum?</p>
+        <div class="aboutme">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolor dignissimos consequatur accusamus
+                repellendus voluptate sed quaerat, deserunt voluptates velit obcaecati eos excepturi sapiente aspernatur
+                incidunt. Quisquam quia ipsam, natus iste autem est ut deleniti unde laudantium vero ea dolores?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, dolorum illo architecto fugit corrupti
+                aperiam. Facilis ducimus, nobis ex corrupti accusantium mollitia eveniet saepe tenetur autem numquam
+                illum
+                fuga dolorum?</p>
+        </div>
         <br>
         <a href="#portfolio" class="button">Moje Portfolio</a>
-        </div>
-    </section>
     </section>
 
     <section id="portfolio">
@@ -63,35 +65,59 @@
             <hr>
             <br>
         </div>
-        <div class="gallery">
-                <div class="photo1">
-                    <img src="img/portfolio/photo-1.jpg" alt="photo-1"></div>
-                <div class="photo2">
-                    <img src="img/portfolio/photo-2.jpg" alt="photo-2"></div>
-                <div class="photo3">
-                    <img src="img/portfolio/photo-3.jpg" alt="photo-3"></div>
-                <div class="photo4">
-                    <img src="img/portfolio/photo-4.jpg" alt="photo-4"></div>
-                <div class="photo5">
-                    <img src="img/portfolio/photo-5.jpg" alt="photo-5"></div>
-                <div class="photo6">
-                    <img src="img/portfolio/photo-6.jpg" alt="photo-6"></div>
-                <div class="photo7">
-                    <img src="img/portfolio/photo-7.jpg" alt="photo-7"></div>
-                <div class="photo8">
-                    <img src="img/portfolio/photo-8.jpg" alt="photo-8"></div>
-                <div class="photo9">
-                    <img src="img/portfolio/photo-9.jpg" alt="photo-9"></div>
-                <div class="photo10">
-                    <img src="img/portfolio/photo-10.jpg" alt="photo-10"></div>
-                <div class="photo11">
-                    <img src="img/portfolio/photo-11.jpg" alt="photo-11"></div>
-                <div class="photo12">
-                    <img src="img/portfolio/photo-12.jpg" alt="photo-12"></div>
+    <div class="gallery">
+            <div class="photo">
+            <img src="img/portfolio/photo-1.jpg" alt="photo-1">
+             <h3>Fotografia nr 1</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-2.jpg" alt="photo-2">
+                <h3>Fotografia nr 2</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-3.jpg" alt="photo-3">
+                <h3>Fotografia nr 3</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-4.jpg" alt="photo-4">
+                <h3>Fotografia nr 4</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-5.jpg" alt="photo-5">
+                 <h3>Fotografia nr 5</h3>
+                </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-6.jpg" alt="photo-6">
+                <h3>Fotografia nr 6</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-7.jpg" alt="photo-7">
+                <h3>Fotografia nr 7</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-8.jpg" alt="photo-8">
+                <h3>Fotografia nr 8</h3>
+            </div>
+            <div class="photo">
+                <img src="img/portfolio/photo-9.jpg" alt="photo-9">
+                <h3>Fotografia nr 9</h3>
+            </div>
+                <div class="photo">
+                 <img src="img/portfolio/photo-10.jpg" alt="photo-10">
+                <h3>Fotografia nr 10</h3>
+            </div>
+                <div class="photo">
+                <img src="img/portfolio/photo-11.jpg" alt="photo-11">
+                <h3>Fotografia nr 11</h3>
+                </div>
+             <div class="photo">
+                 <img src="img/portfolio/photo-12.jpg" alt="photo-12">
+                <h3>Fotografia nr 12</h3>
+                </div>
         </div>
         <br>
-
     </section>
+
     <section id="contact">
         <h2>Kontakt</h2>
         <hr>
@@ -99,15 +125,15 @@
         <form action="https://formspree.io/diana.lach@yahoo.com" method="post">
             <input type="text" name="name" id="name" placeholder="Imię" required>
             <input type="email" name="email" id="subject" placeholder="Email" required><br><br>
-            <textarea name="messange" id="messange" placeholder="Wiadomość" cols="20" rows="5"
+            <textarea name="message" id="message" placeholder="Wiadomość" cols="50" rows="5"
                 required></textarea><br><br>
             <input type="submit" value="Wyślij wiadomość">
         </form>
-        <div>
-            <a href="facebook.com/diana.lach"><i class="fab fa-facebook-square"></i></a>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
+        <div class="socialmedia">
+            <a href="#" class="social-link"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
         </div>
     </section>
     <footer class="copyright">
