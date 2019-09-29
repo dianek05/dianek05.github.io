@@ -1,35 +1,17 @@
-body {
-    width: 80%;
+@media (min-width:769px) and (max-width:992px) {
+    .photo {
+        flex-basis: 50%;
+     }
 }
 
-/* large devices */
-
-@media screen and (min-width:993px) {
-	body {
-		width: 80%;
-	}
+@media (min-width:481px) and (max-width:768px) {
+    .photo {
+        flex-basis: 100%;
+     }
 }
 
-/* medium devices */
-
-@media screen and (min-width:769px) and (max-width: 992px) {
-	body {
-		width:49%;
-	}
-}
-
-/* phones */
-
-@media screen and (min-width:481px) and (max-width:768px) {
-	body {
-		width: 100%;
-	}
-}
-
-/* small devices */
-
-@media screen and (max-width:480px) {
-    body {
-        width:100%;
-} 
+@media (max-width:481px) {
+    .photo {
+        flex-basis: 100%;
+     }
 }
