@@ -80,14 +80,10 @@ nav {
     left:0;
     top:0;
     position: relative;
-    z-index: -1;
+    z-index: 100;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-.menu {
-    margin: 0px;
 }
 
 .menu li {   
