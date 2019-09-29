@@ -6,6 +6,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #777;
     font-size: 10px;
+    margin: 0 auto;
+    padding:0;
 }
 
 header {
@@ -16,6 +18,7 @@ header {
     background-size: cover;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -25,11 +28,21 @@ h1 {
     margin:auto;
 }
 
+section {
+    padding: 9em 0px;
+    text-align: center;
+}
+
 hr {
     background-color: #007bff;
     border:0;
     height: 1px;
     width: 7em;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
 }
 
 .language {
@@ -40,8 +53,7 @@ hr {
     display: flex;
 }
 
-span::before {
-    content:" •";
+span:nth-child(2n) {
     color: #007bff;
     padding: 5px;
 }
@@ -53,10 +65,16 @@ span::before {
     margin: auto;
     padding: 1.5em 2em;
     display: inline-block;
+    transition: all 1s;
+    font-size: 1em;
     color:#333;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007bff;
+    color: #f2f1ed;
 }
 
 nav {
@@ -97,3 +115,38 @@ h2 {
     margin:auto;
     text-align: center;
 }
+
+.aboutme p {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+[title='myphoto'] {
+    max-height: 35em;
+    max-width: 35em;
+    border-radius: 50%;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+}
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    padding: 3em;
+}
+
+.photo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+}
+
+
