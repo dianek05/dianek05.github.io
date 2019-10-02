@@ -10,7 +10,6 @@ body {
 
 .container {
     display: flex;
-    height: 50vh;
 }
 
 header {
