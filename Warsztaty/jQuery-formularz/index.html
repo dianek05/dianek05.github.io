@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form id="pizza-order" method="POST">
+        <fieldset>
+            <label for="Imię">Imię:</label>
+            <input type="text" name="Imię" id="name" class="first-name" placeholder="Imię"></fieldset>
+        <fieldset>
+            <label for="Nazwisko">Nazwisko:</label>
+            <input type="text" name="Nazwisko" class="last-name" id="name" placeholder="Nazwisko">
+        </fieldset>
+        <fieldset>
+            <label for="Ulca">Ulica:</label>
+            <input type="text" name="Ulica" id="street" class="street" placeholder="Ulica">
+            <label for="Nr domu">Numer domu/mieszkania</label>
+            <input type="number" name="numer" id="number" class="number" placeholder="Numer">
+        </fieldset>
+        <fieldset>
+            <label for="kodpocztowy">Kod pocztowy:</label>
+            <input type="text" pattern="^\d{2}-\d{3}$" name="kodpocztowy" class="zipcode" id="zipcode" placeholder="Kod pocztowy">
+            <label for="miasto" name="miasto" id="city" placeholder="Miasto">Miasto</label>
+            <input type="text" name="miasto" id="city" placeholder="Miasto">
+        </fieldset>
+        <fieldset>
+            <label for="pizza">Pizza</label>
+            <select name="pizza" id="pizza">
+                <option selected value="Wybierz pizzę:">Wybierz pizzę:</option>
+                <option value="Pizza margerita">Pizza margerita</option>
+                <option value="Pizza hawajska">Pizza hawajska</option>
+                <option value="Pizza salami">Pizza salami</option>
+                <option value="Pizza carbonara">Pizza carbonara</option>
+                <option value="Pizza diabolo">Pizza diabolo</option>
+            </select>
+            <span id="price">0 PLN</span>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="sosp" id="sos">
+            <label for="sosp">Sos pomidorowy</label>
+            <input type="checkbox" name="sosc" id="sosc">
+            <label for="sosc">Sos czosnkowy</label>
+        </fieldset>
+        <fieldset>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">Zgoda na RODO</label>
+        </fieldset>
+            <input type="submit" value="Zamów">
+        <ul id="errors" class="errors"></ul>
+    </form>
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <!-- skrypt -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
