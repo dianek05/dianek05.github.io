@@ -19,7 +19,7 @@
             <input type="text" name="Nazwisko" class="last-name" id="name" placeholder="Nazwisko">
         </fieldset>
         <fieldset>
-            <label for="Ulca">Ulica:</label>
+            <label for="Ulica">Ulica:</label>
             <input type="text" name="Ulica" id="street" class="street" placeholder="Ulica">
             <label for="Nr domu">Numer domu/mieszkania</label>
             <input type="number" name="numer" id="number" class="number" placeholder="Numer">
@@ -28,28 +28,28 @@
             <label for="kodpocztowy">Kod pocztowy:</label>
             <input type="text" pattern="^\d{2}-\d{3}$" name="kodpocztowy" class="zipcode" id="zipcode" placeholder="Kod pocztowy">
             <label for="miasto" name="miasto" id="city" placeholder="Miasto">Miasto</label>
-            <input type="text" name="miasto" id="city" placeholder="Miasto">
+            <input type="text" name="miasto" id="city" class="city" placeholder="Miasto">
         </fieldset>
         <fieldset>
             <label for="pizza">Pizza</label>
-            <select name="pizza" id="pizza">
-                <option selected value="Wybierz pizzę:">Wybierz pizzę:</option>
-                <option value="Pizza margerita">Pizza margerita</option>
-                <option value="Pizza hawajska">Pizza hawajska</option>
-                <option value="Pizza salami">Pizza salami</option>
-                <option value="Pizza carbonara">Pizza carbonara</option>
-                <option value="Pizza diabolo">Pizza diabolo</option>
+            <select name="pizza" id="pizza" class="pizza">
+                <option selected value="0">Wybierz pizzę:</option>
+                <option value="1">Pizza margerita</option>
+                <option value="2">Pizza hawajska</option>
+                <option value="3">Pizza salami</option>
+                <option value="4">Pizza carbonara</option>
+                <option value="5">Pizza diabolo</option>
             </select>
-            <span id="price">0 PLN</span>
+            <span id="price" class="price">0 PLN</span>
         </fieldset>
         <fieldset>
-            <input type="checkbox" name="sosp" id="sos">
+            <input type="checkbox" name="sosp" id="sos" class="tomato-sauce">
             <label for="sosp">Sos pomidorowy</label>
-            <input type="checkbox" name="sosc" id="sosc">
+            <input type="checkbox" name="sosp" id="sosp" class="garlic-sauce">
             <label for="sosc">Sos czosnkowy</label>
         </fieldset>
         <fieldset>
-            <input type="checkbox" name="agreement" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement" class="agree">
             <label for="agreement">Zgoda na RODO</label>
         </fieldset>
             <input type="submit" value="Zamów">
