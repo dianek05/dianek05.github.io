@@ -1,0 +1,21 @@
+body {
+    font-size: 10px;
+}
+
+fieldset {
+    margin:0;
+    font-size: 2em;
+}
+
+form input[type='submit'] {
+    text-transform: uppercase;
+    border: 2px solid black;
+    margin: 2em;
+    padding: 1em 2em;
+    display: inline-block;
+    transition: all 1s;
+    font-size: 2em;
+    color:#333;
+    background-color: transparent;
+    cursor: pointer;
+}
