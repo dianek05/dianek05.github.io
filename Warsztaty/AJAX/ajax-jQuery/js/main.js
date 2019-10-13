@@ -9,7 +9,7 @@ $(function(){
 
         console.log(daneJson);
         
-        $(".display").append("<p>" + daneJson + "</p>");
+        $(".display").append(`<p>ID: ${daneJson.id} <br>Name: ${daneJson.name} <br>Username: ${daneJson.username} <br>Email: ${daneJson.email}</p>`);
         }
         
         );
