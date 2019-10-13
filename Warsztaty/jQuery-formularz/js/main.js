@@ -1,6 +1,6 @@
 $(function() {
 
-    let formPizzaOrder = $(".pizza-order");
+    let formPizzaOrder = $("#pizza-order");
 
     let firstName = $(".first-name");
     let lastName= $(".last-name");
@@ -45,76 +45,78 @@ $(function() {
         });
     });
 
-// walidacja danych
+    // walidacja danych
 
-formPizzaOrder.submit( function() {
+    formPizzaOrder.submit( function() {
 
-    errors.empty();
+        console.log(formPizzaOrder);
 
-    let errorsArray = [];
+        errors.empty();
 
-    if ( $.trim(firstName.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Imie");
-    }    
+        let errorsArray = [];
 
-    if ( $.trim(lastName.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Nazwisko");
-    } 
+        if ( $.trim(firstName.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Imie");
+        }    
 
-    if ( $.trim(street.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Ulica");
-    } 
+        if ( $.trim(lastName.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Nazwisko");
+        } 
 
-    if ( $.trim(number.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Numer");
-    } 
+        if ( $.trim(street.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Ulica");
+        } 
 
-    if ( $.trim(zipCode.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Kod pocztowy");
-    } 
+        if ( $.trim(number.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Numer");
+        } 
 
-    if ( $.trim(city.val()) == "") {
-        errorsArray.push("Uzupełnij pole: Miasto");
-    } 
+        if ( $.trim(zipCode.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Kod pocztowy");
+        } 
 
-    if ( pizza.val() == 0 ) {
-        errorsArray.push("Wybierz Pizzę!");
-    }
+        if ( $.trim(city.val()) == "") {
+            errorsArray.push("Uzupełnij pole: Miasto");
+        } 
 
-
-    if ( agree.is(':checked') == false ) {
-        errorsArray.push("Musisz zgodzić się na RODO :)");
-    }
+        if ( pizza.val() == 0 ) {
+            errorsArray.push("Wybierz Pizzę!");
+        }
 
 
+        if ( agreement.is(':checked') == false ) {
+            errorsArray.push("Musisz zgodzić się na RODO :)");
+        }
 
-    if (errorsArray.length != 0) {
 
-        errorsArray.forEach(function(error) {
-            let liError = "<li>" + error + "</li>";
-            errors.append(liError);
-        });
+
+        if (errorsArray.length != 0) {
+
+            errorsArray.forEach(function(error) {
+                let liError = "<li>" + error + "</li>";
+                errors.append(liError);
+            });
+
+            return false;
+        }
+
+        let orderObject = {
+            firstName: $.trim(firstName.val()),
+            lastName: $.trim(lastName.val()),
+            street: $.trim(street.val()),
+            number: $.trim(number.val()),
+            zipCode: $.trim(zipCode.val()),
+            city: $.trim(city.val()),
+            pizza: $.trim(pizza.val()),
+            sauces: [
+                tomatoSauce.is(":checked"), garlicSauce.is(":checked")
+            ]
+        };
+
+        console.log(orderObject);
+        console.log(JSON.stringify(orderObject));
 
         return false;
-    }
-
-    let orderObject = {
-        firstName: $.trim(firstName.val()),
-        lastName: $.trim(lastName.val()),
-        street: $.trim(street.val()),
-        number: $.trim(number.val()),
-        zipCode: $.trim(zipCode.val()),
-        city: $.trim(city.val()),
-        pizza: $.trim(pizza.val()),
-        sauces: [
-            tomatoSauce.is(":checked"), garlicSauce.is(":checked")
-        ]
-    };
-
-    console.log(orderObject);
-    console.log(JSON.stringify(orderObject));
-
-    return false;
-});
+    });
 
 });
