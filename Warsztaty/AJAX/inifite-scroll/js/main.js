@@ -24,5 +24,18 @@ window.onscroll = function () {
         koniecLicznik += 1;
 
         console.log("Dojdziono do końca razy: " + koniecLicznika);
+
+        let pUserId = document.createElement('p');
+        let pUserName = document.createElement('p');
+        let pUserEmail = document.createElement('p');
+
+        pUserId.innerHTML = "User ID: " + response[i].id;
+            pUserName.innerHTML = "User Name: " + response[i].name;
+            pUserURL.innerHTML = "User URL: http://" + response[i].website + "<br>--------";
+
+            document.body.appendChild(pUserId);
+            document.body.appendChild(pUserName);
+            document.body.appendChild(pUserURL);
+       
     }
 };
