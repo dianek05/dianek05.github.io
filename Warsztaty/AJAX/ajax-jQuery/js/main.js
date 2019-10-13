@@ -5,10 +5,12 @@ $(function(){
         
         $.getJSON('https://jsonplaceholder.typicode.com/users/1', 
         
-        function (data) {
-            console.log(data);
-            }
-        $(".display").append('<p>'+ waszePobraneDane + "</p>");
+        function (daneJson) {
+
+        console.log(daneJson);
+        
+        $(".display").append("<p>" + daneJson + "</p>");
+        }
         
         );
     });
