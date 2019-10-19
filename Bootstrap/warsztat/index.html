@@ -10,12 +10,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75de697617.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Klub podrozniczy</a>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Klub podróżniczy</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,45 +24,79 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#form">Dołącz do nas <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="#">Inspiracje</a>
+                <a class="nav-item nav-link" href="#inspirations">Inspiracje</a>
             </div>
         </div>
     </nav>
-    <section id="form">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-2">
-                <form id="form">
-                    <header class="row">
-                        <div class="col-2 col-sm-2 col-md-3 col-xl-3"">
-                        <h2>Dołącz do nas</h2>
-                        <p>Wypełnij zgłoszenie na członka klubu</p>
-                        </div>
-                    <div class="col-2 col-sm-2 col-md-3 col-xl-3">
-                            <i class="fa fa-pencil-alt"></i>
-                        </div>
+    <!-- Formularz -->
+    <section id="form" class="main-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <form id="form" class="form">
+                        <header class="row fixed">
+                            <div class="col-sm-8 col-md-10 col-xl-10">
+                                <h2>Dołącz do nas</h2>
+                                <p>Wypełnij zgłoszenie na członka klubu</p>
+                            </div>
+                            <div class="col-sm-4 col-md-2 col-xl-2">
+                                <i class="fa fa-pencil-alt"></i>
+                            </div>
                         </header>
-                    <div class="form-group">
-                        <input type="name" class="form-control" id="exampleFormControlInput1"
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="exampleFormControlInput1"
                             placeholder="Imię i Nazwisko">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="phone" class="form-control" id="exampleFormControlInput3" placeholder="Telefon">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Kilka słów o sobie"></textarea>
-                    </div>
-                </form>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" class="form-control" id="exampleFormControlInput3"
+                                placeholder="Telefon">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Kilka słów o sobie"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary2 btn-orange">Zapisz się!</button>
+                        <p class="agreement">Wypełnianjąc zgłoszenie wyrażasz zgodę na przetwarzanie danych zgodnie z <a href="#">polityką prytaności</a> </p>
+
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-7 text-center">
+                    <h1>Świat jest na wyciągnięcie ręki</h1>
+                    <p>Poznaj ludzi, których łąćzny wspólna pasja do podróżowania. Przekonaj się, jak wygląda życie bez
+                        granic</p>
+                    <a href="#footer" class="btn btn-primary btn-orange">Znajdź nas <i class="fas fa-angle-right"></i></a>
+                    <a href="#" class="btn btn-primary btn-grey">Dowiedź się więcej <i class="far fa-lightbulb"></i></a>
+                </div>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
         </div>
     </section>
-
+    <section id="inspirations">
+        <div class="cointainer">
+            <div class="row">
+                <div class="col-md-5 col-lg-5">
+                    <video src=""></video>
+                </div>
+                <div class="col-md-7 col-lg-7 text-left">
+                    <h2>Inspirujemy</h2>
+                    <p>Poznaj historie ludzi, którzy zrealizowali swoje marzenia</p>
+                    <a href="#">Więcej historii</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <h2>O nas</h2>
+                    <p>lorem25</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
