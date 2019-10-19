@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    background-color: #444;
+    color: #c2c2c2;
+    font-size: 36px;
+}
+
+#form {
+    background-image: url(../img/form-background.jpg);
+    font-size: 15px;
+    color: #c2c2c2;
+}
+
+h2 {
+    font-size: 18px;
+}
