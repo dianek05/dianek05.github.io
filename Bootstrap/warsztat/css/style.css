@@ -8,16 +8,108 @@ body {
 
 .navbar {
     background-color: #444;
-    color: #c2c2c2;
-    font-size: 36px;
 }
 
-#form {
-    background-image: url(../img/form-background.jpg);
+.navbar-brand, a {
+    color: #c2c2c2;
+}
+
+a:hover {
+    opacity: 1;
+    color: #c2c2c2;
+}
+
+.main-form {
     font-size: 15px;
     color: #c2c2c2;
+    background-image: url(../img/form-background.jpg);
+    background-position: top;
+    background-position: cover;
+}
+
+.main-form form {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.35);
+    padding:5px;
+    margin:0px;
+}
+
+.fixed {
+    margin:0px;
+}
+
+.form-group {
+    margin-right: 20px;
+    margin-left:20px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 36px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
+
+h1, h2, .btn {
+    color: #fff;
+}
+
+.form header p {
+    font-size: 15px;
+    padding-bottom:10px;
+    padding-left: 20px;
+}
+
+#exampleFormControlInput1 {
+    margin-top: 20px;
+}
+
+.col-sm-4.col-md-2.col-xl-2 {
+    padding:10px;
+    font-size: 4em;
+    margin:auto;
+}
+
+.agreement {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+p a {
+    color: #e38f42;
+}
+
+.btn-primary2 {
+    width: 400px;
+    margin-left:20px;
+    margin-right: 10px;
+}
+
+.btn-orange {
+    background-color: #e38f42;
+    border: none;
+    padding: 5px;
+}
+
+.btn-block {
+    margin-left:15px;
+}
+
+.btn-grey {
+    color: rgba(0, 0, 0, 0.5);
+    border:none;    
+}
+
+section, footer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.col-md-7 .col-lg-7 .text-center {
+    justify-content: center;
+}
+
