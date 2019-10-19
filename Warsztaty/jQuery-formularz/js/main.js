@@ -89,7 +89,6 @@ $(function() {
         }
 
 
-
         if (errorsArray.length != 0) {
 
             errorsArray.forEach(function(error) {
