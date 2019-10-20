@@ -1,2 +1,22 @@
 body {
-  background-color: aquamarine; }
+  background-color: blue;
+  color: black;
+  font-size: 15px; }
+
+p {
+  color: red;
+  background-color: blue;
+  text-transform: uppercase;
+  font-family: sans-serif; }
+
+nav ul {
+  margin: 15px;
+  padding: 0px;
+  list-style: none; }
+  nav ul li {
+    display: inline-block;
+    background-color: #fff; }
+    nav ul li a {
+      color: red;
+      background-color: blue;
+      text-transform: uppercase; }
