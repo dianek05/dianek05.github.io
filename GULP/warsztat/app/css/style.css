@@ -1,0 +1,87 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  margin: 0px;
+  border: none; }
+
+header {
+  color: #ffff;
+  padding-top: 1.5rem;
+  margin-bottom: 4rem; }
+  header .container {
+    top: 0;
+    bottom: 0; }
+  header h2 {
+    font-size: 1.75em;
+    display: inline-block; }
+  header h3 {
+    font-size: 0.75em; }
+  header i {
+    color: #ecd407;
+    font-size: 2.5em;
+    display: inline-block;
+    padding: 0px 1rem; }
+  header p {
+    font-size: 1rem; }
+  header .phone {
+    text-align: right; }
+
+section {
+  background-color: #001d8a;
+  background-image: url(../img/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 12em 0px;
+  color: #fff; }
+  section h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: left;
+    padding: 1em; }
+  section h3 {
+    font-size: 1.25rem;
+    padding-bottom: 1rem; }
+  section span {
+    color: #ecd407; }
+  section form {
+    background-color: #001d8a;
+    padding: 2em; }
+  section input:not([type='submit']), section textarea {
+    display: inline-block;
+    width: 100%; }
+  section input, section textarea {
+    margin-bottom: .5rem;
+    padding: 0.5rem; }
+  section input[type="submit"] {
+    min-width: 30%;
+    background-color: #ecd407;
+    border: none; }
+    section input[type="submit"]:hover {
+      color: #001d8a;
+      font-weight: 500; }
+
+footer {
+  background-color: #292929;
+  color: #fff;
+  padding: 1em; }
+  footer i {
+    display: block;
+    background-color: #ecd407;
+    color: #292929;
+    font-size: 1.5em;
+    padding: .75em;
+    margin: 0.5em;
+    text-align: center; }
+  footer h4 {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 1em; }
+  footer a {
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-bottom: 1em; }
+  footer p {
+    font-size: .75em;
+    padding-top: 0.5em; }

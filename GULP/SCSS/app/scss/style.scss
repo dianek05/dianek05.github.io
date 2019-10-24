@@ -1,0 +1,31 @@
+@import 'zmienne';
+
+body {
+    background-color: $bg-color;
+    color: $main-color;
+    font-size: $font-size;
+}
+
+@mixin linki-nav {
+    color: red;
+    background-color: $bg-color;
+    text-transform: uppercase;
+}
+
+p {
+    @include linki-nav;
+    font-family: sans-serif;
+}
+
+nav ul {
+    margin: $font-size;
+    padding: 0px;
+    list-style: none;
+    li { 
+        display: inline-block;
+        background-color: #fff;
+        a{
+            @include linki-nav;
+        }
+   }
+}

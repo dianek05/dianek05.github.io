@@ -1,0 +1,16 @@
+#everest {
+    float: left
+}
+
+#everest2 {
+    float: right
+}
+
+p {
+    padding: 20px;
+}
+
+p:last-child {
+    background-color: bisque;
+    clear: both;
+}

@@ -1,0 +1,37 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+i {
+    display: block;
+    position: relative;
+    font-size: 6em;
+    color: #e38f42;
+}
+
+h1 {
+    font-size: 4em;
+    padding-top: 4em;
+    color: gray;
+}
+
+h2 {
+    font-size: 3em;
+    color: gray;
+}
+
+.circle {
+    background-color: lightgray;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+}
+
+hr {
+    background-color: gray;
+    border:0;
+    height: 1px;
+    width: 7em;
+}
+

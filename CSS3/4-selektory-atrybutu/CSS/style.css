@@ -1,0 +1,31 @@
+[title] {
+    color: blueviolet;
+}
+
+[title='About me'] {
+    color: beige;
+}
+
+[title~='Container'] {
+    background-color: yellow;   
+}
+
+[title*='tion'] {
+    color: fuchsia; 
+}
+
+[title^='More'] {
+    text-transform: uppercase;
+}
+
+[title$='skills'] {
+    color: darkgreen;
+}
+
+[title]:last-child {
+    background-color: cyan; 
+}
+
+nav > ul > li > a[title] {
+    background-color: brown;    
+}

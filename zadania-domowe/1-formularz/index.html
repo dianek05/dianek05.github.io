@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularz zapisów na warsztaty</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <form action="https://formspree.io/diana.lach@yahoo.com" method="post">
+        <label for="firstname">Imię:</label>
+        <input type="text" name="Imię" id="firstname" placeholder="Podaj swoje imię">
+        <br />
+
+        <label for="lastname">Nazwisko:</label>
+        <input type="text" name="Nazwisko" id="lastname" placeholder="Podaj swoje nazwisko">
+        <br>
+
+        <label for="email">Adres e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Podaj swój adres email">
+        <br>
+
+        <label for="telephone">Numer telefonu:</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="Podaj swój numer telefonu">
+        <br>
+
+        <label for="city">Wybór miasta:</label>
+        <select name="select" id="city">
+            <option value="warszawa">Warszawa</option>
+            <option value="krakow">Kraków</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+        <br>
+
+        <p>Płeć:</p>
+        <label for="male">Mężczyzna</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Kobieta</label>
+        <input type="radio" name="gender" id="female">
+        <br>
+
+        <label for="message"></label>
+        <textarea name="message" id="message" cols="30" rows="10"
+            placeholder="Wiadomość">Uwagi / dodatkowe informacje:</textarea>
+        <br>
+        <br>
+
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement">Zgoda na przetwarzanie danych osobowych</label>
+        <br>
+
+        <input type="submit" value="Wyślij">
+        <br>
+
+    </form>
+</body>
+
+</html>

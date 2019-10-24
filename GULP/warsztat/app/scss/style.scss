@@ -1,0 +1,123 @@
+$font: "Open Sans", sans-serif;
+$blue: #001d8a;
+$yellow: #ecd407;
+$grey: #292929; 
+$size: 10px;
+
+@mixin fixed {
+    margin: 0px;
+    border: none;
+}
+
+@mixin background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: $font;
+    font-size: $size;
+    @include fixed;
+}
+
+header {
+    color: #ffff;
+    padding-top:1.5rem;
+    margin-bottom: 4rem;
+    .container {
+        top: 0;
+        bottom: 0; 
+    }
+    h2 {
+        font-size: 1.75em;
+        display: inline-block;
+    }
+    h3 {
+        font-size: 0.75em;
+    }
+    i {
+        color: $yellow;
+        font-size: 2.5em;
+        display: inline-block;
+        padding: 0px 1rem;
+    }
+    p {
+        font-size:1rem;
+    }
+    .phone {
+        text-align: right;
+        }
+}
+
+section {
+    background-color: $blue;
+    background-image: url(../img/background.png);
+    @include background;
+    padding: 12em 0px;
+    color: #fff;
+        h2 {
+        font-size:1.5rem;
+        display: inline-block;
+        text-align: left;
+        padding: 1em;
+        }
+        h3 {
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+        }
+        span {
+        color:$yellow;
+        }
+         form {
+        background-color: $blue;
+        padding: 2em;
+        }
+        input:not([type='submit']), textarea {
+        display: inline-block;
+        width: 100%;
+        }
+        input, textarea {
+        margin-bottom: .5rem;
+        padding: 0.5rem;
+        }
+        input[type="submit"] {
+        min-width: 30%;
+        background-color: $yellow;
+        border:none;
+        &:hover {
+            color: $blue;
+            font-weight: 500;
+        }
+    }
+}
+
+footer {
+    background-color: $grey;
+    color: #fff;
+    padding: 1em;
+    i {
+        display: block;
+        background-color: $yellow;
+        color: $grey;
+        font-size: 1.5em;
+        padding: .75em;
+        margin: 0.5em;
+        text-align: center;
+        }  
+    h4 {
+        font-size: 1em;
+        text-align: center;
+        padding-bottom: 1em;
+        }
+    a {
+        text-align: center;
+        color: #fff;
+        display: block;
+        padding-bottom: 1em;
+    }
+    p {
+        font-size: .75em;
+        padding-top: 0.5em;
+    }
+    }

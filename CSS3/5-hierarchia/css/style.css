@@ -1,0 +1,16 @@
+/* p {
+    background-color: indigo !important;
+}
+ */
+
+ p#paragraph {
+     background-color: green;  
+ }
+
+p.paragraph {
+    background-color: aqua;
+}
+
+ p {
+     background-color: blue;    
+ }

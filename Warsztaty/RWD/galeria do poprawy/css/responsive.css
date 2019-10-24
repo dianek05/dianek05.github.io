@@ -1,0 +1,42 @@
+#gallery {
+    width: 80%;
+}
+
+figure {
+    width:33%;
+}
+
+/* large devices */
+
+@media screen and (min-width:993px) {
+	#gallery {
+		width: 80%;
+	}
+}
+
+/* medium devices */
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+	figure {
+		width:49%;
+	}
+}
+
+/* phones */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+	figure {
+		width: 100%;
+	}
+}
+
+/* small devices */
+
+@media screen and (max-width:480px) {
+    #gallery {
+        width:100%;
+    }
+    figure {
+        width: 100%;
+    }
+}

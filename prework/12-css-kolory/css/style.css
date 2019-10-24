@@ -1,0 +1,21 @@
+body {
+    background-color: blanchedalmond;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    font-size: 14px;
+}
+
+.one {
+    color: brown;
+}
+
+.two {
+    color: blue;
+}

@@ -1,0 +1,19 @@
+.container-example {
+    background-color: chartreuse;
+    height: 300px;
+}
+
+.container-fluid {
+    height: 100px;
+    background-color: coral;
+}
+
+.item {
+    height: 400px;
+    background-color: lightsalmon;
+    border: 1px solid black;
+}
+
+.item:nth-child(2n) {
+    background-color: burlywood;
+}

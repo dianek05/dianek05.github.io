@@ -1,0 +1,29 @@
+#p1 {
+    background-color: hotpink;
+}
+
+#p2 {
+    background-color: yellowgreen;
+}
+
+#inline-p1 {
+    background-color: chartreuse;
+    display: inline;
+}
+
+#inline-p2 {
+    background-color: royalblue;
+    display: inline;
+}
+
+#inline-block-elements {
+    background-color: aqua;
+    display: inline-block;
+    width: 120px;
+    height: 45px;
+    margin: 10px;
+}
+
+#dispay-none {
+    display: none
+}

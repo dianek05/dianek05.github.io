@@ -1,0 +1,27 @@
+#send:hover {
+    background-color: coral;
+    border: 5px solid chartreuse;
+}
+
+#name:focus {
+    font-size: 30px;
+    background-color: darkred;
+    padding: 10px;
+}
+
+.customer:first-child {
+    color: pink;    
+}
+
+.customer:nth-child(1) {
+    color: plum;
+}
+
+.customer:nth-last-child(3) {
+    padding: 15px;
+    text-decoration: blueviolet;
+}
+
+.customer:nth-child(2n-2) {
+    color: aqua;
+}
