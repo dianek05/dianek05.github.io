@@ -127,7 +127,10 @@ section, footer {
 
 h1 {
     font-weight: 300;
+<<<<<<< HEAD
     transform: rotate(90deg);
+=======
+>>>>>>> 57d39f1e96475c5c38e5ad609abc1bcfefcc5b6e
 }
 
 video {
