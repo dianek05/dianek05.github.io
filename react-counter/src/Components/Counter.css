@@ -1,0 +1,14 @@
+.counter {
+    background-color: green;
+    color: white;
+}
+
+.counter h1 {
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.counter--dark {
+    background: black;
+}
