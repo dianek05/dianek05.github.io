@@ -9,9 +9,9 @@ $(function(){
 
         console.log(daneJson);
         
-        $(".display").append(`<p>ID: ${daneJson.id} <br>Name: ${daneJson.name} <br>Username: ${daneJson.username} <br>Email: ${daneJson.email}</p>`);
-        }
-        
-        );
+        $(".display").after(
+            `<p>ID: ${daneJson.imie} <br>Name: ${daneJson.nazwisko} <br>Zawod: ${daneJson.zawod} <br>Email: ${daneJson.firma}</p>`);
+        });
     });
 });
+
