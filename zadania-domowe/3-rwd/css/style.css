@@ -41,6 +41,7 @@ h2 {
 @media (min-width: 992px) and (max-width:1169px) {
 	.face {
 		background-image: url(../img/man-2.jpg);
+		height: 70vh;
 	}
 	h1, h2 {
 		display: block;
@@ -57,12 +58,16 @@ h2 {
 }
 
 @media (max-width:991px) {
+	.face {
+		height: 50vh;
+	}
+
 	h1, h2 {
 		color: black;
 		text-align: center;
 	}
 	h2 {
-		padding-top: 20em;
+		padding-top: 12.5em;
 	}
 	h1 {
 		padding-top:0.5em;
