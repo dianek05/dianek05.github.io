@@ -7,22 +7,32 @@ class UsersForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault(); 
-        this.props.addUser(this._inputName.value);   
+
+
+        this.props.addUser(this._inputFirstName.value, this._inputLastName.value); 
         
-        this._inputName.value = "";
+        this._inputFirstName.value = "";
+        this._inputLastName.value = "";
         
-        if(this._inputName.value.length < 1){
+        if(this._inputFirstName.value.length < 1){
             this.setState = () => ({
                 
             })
+        
+        }
+        if(this._inputLastName.value.length < 1){
+            this.setState = () => ({
+                
+            })
+        
         }
     }
-
 
     render(){
         return(
             <form onSubmit={this.handleSubmit}>
-                <input type="text" className='input' ref={(data) => {this._inputName = data}} ></input>
+                <input type="text" placeholder="First Name" className='input' ref={(data) => {this._inputFirstName = data}} ></input>&nbsp;
+                <input type="text" placeholder="Last Name" className='input' ref={(data) => {this._inputLastName = data}} ></input>
                 <button type="submit" className='btnAdd'>Add user</button>
             </form>
         )
