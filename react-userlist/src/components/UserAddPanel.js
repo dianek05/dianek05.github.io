@@ -23,7 +23,7 @@ class UsersForm extends Component {
         return(
             <form onSubmit={this.handleSubmit}>
                 <input className='input' ref={(data) => {this._inputName = data}} ></input>
-                <button className='btnAdd'>Dodaj</button>
+                <button className='btnAdd'>Add user</button>
             </form>
         )
     }
