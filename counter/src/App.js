@@ -7,8 +7,7 @@ import Step from "./components/Step"
 function App() {
   return (
     <div className="App">
-      <Counter />
-      <Counter initValue={5} />
+      <Counter initValue={8} />
     </div>
   );
 }
