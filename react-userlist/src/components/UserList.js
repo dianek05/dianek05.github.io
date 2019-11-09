@@ -6,7 +6,7 @@ class UserList extends Component{
     }
 
     createLi = (user) => {
-       return <li key={user.key}>{user.name} <button className='userRem' onClick={() => this.props.listRemoveUser(user.key) }>Usuń</button></li>;
+       return <li key={user.key}>{user.name} <button className='userRem' onClick={() => this.props.listRemoveUser(user.key) }> Remove</button></li>;
     }
 
     render(){
@@ -14,7 +14,7 @@ class UserList extends Component{
         let usersLi = usersList.map(this.createLi);
 
         return(
-            <div className='usersContainer'>
+            <div className='the-list'>
                 <ul>{usersLi}</ul>
                 
             </div>
