@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import UserList from './UserList';
 import UsersForm from './UserAddPanel';
-import "./Users.css";
+import './Users.css';
 
 class Users extends Component{
 
@@ -33,13 +33,14 @@ class Users extends Component{
     }
 
     
-    render(){
+    render() {
+
+        let headingTitle = `"${this.props.title}" ${this.props.firstName}`;
+
         return (
-            // <div className="users-main">
-            //     <h1>User's List</h1>
-            // </div>
-            <div>
-                <h1>User's List</h1>
+            <div className="users-main">
+                <h1>{headingTitle}</h1>
+
                 <UsersForm addUser={this.addUser}/>
                 <br />
                 <UserList currentList={this.state.listOfUsers} listRemoveUser={this.removeUser}/>
