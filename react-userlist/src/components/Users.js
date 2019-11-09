@@ -12,11 +12,12 @@ class Users extends Component{
         }
     }
 
-    addUser = (userName) =>  {
+    addUser = (firstName, lastName) =>  {
         
         let newUser = {
             key: Date.now(),
-            name: userName
+            firstName: firstName,
+            lastName: lastName
         }
 
         this.setState(  (prevState) => {
