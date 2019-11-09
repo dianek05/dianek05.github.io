@@ -14,6 +14,11 @@
     color: #FFF;
     border: 2px solid #0066FF;
 }
+
+.users-main .userRem {
+    font-size: 14px;
+    margin-left: 20px;
+}
   
 .users-main button:hover {
     background-color: #003399;
