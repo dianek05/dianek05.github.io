@@ -6,9 +6,12 @@ class Counter extends Component {
     constructor(props) {
         super(props);
         let initValue = 0;
+        let step = 5;
+
         if (!isNaN(this.props.initValue)) {
             initValue = parseInt(this.props.initValue);
         }
+
         this.state = {
             counterValue: initValue,
         }
@@ -37,7 +40,7 @@ class Counter extends Component {
     render() {
         return (
             <div className="counter">
-                Licznik:
+                Licznik: 
                 <span className="value">{this.state.counterValue}</span>
                 <ButtonsPanel changeCounterValue={this.changeValue} resetCounterValue={this.resetCounter} />
             </div>
