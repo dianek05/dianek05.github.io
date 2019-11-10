@@ -52,3 +52,28 @@ class Users extends Component{
 }
 
 export default Users;
+
+
+// WALIDACJA?
+// let firstName = this._inputFirstName.value;
+// let lastName = this._inputLastName.value;
+
+// if(firstName.trim() === "") {
+//     this.setState ( (prevState) => {
+//         return{
+//             errors: prevState.UserList.concat("Please give your name"),
+//         }
+//     });
+// }
+
+// if(lastName.trim() === "") {
+//     this.setState ( (prevState) => {
+//         return{
+//             errors: prevState.UserList.concat("Please give your last name"),
+//         }
+//     });
+// }
+
+// if (this.state.errors.length > 0) {
+//     return false;
+// }
