@@ -23,7 +23,6 @@ class UserList extends Component{
         return(
             <div className='the-list'>
                 <ul>{usersLi}</ul>
-                
             </div>
         )
     }
