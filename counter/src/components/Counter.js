@@ -6,14 +6,19 @@ class Counter extends Component {
     constructor(props) {
         super(props);
         let initValue = 0;
-        let step = 5;
+        let initStepValue = 0;
 
         if (!isNaN(this.props.initValue)) {
             initValue = parseInt(this.props.initValue);
         }
 
+        if (!isNaN(this.props.initValue)) {
+            initStepValue = parseInt(this.props.initStepValue);
+        }
+
         this.state = {
             counterValue: initValue,
+            stepValue: initStepValue,
         }
     }
 
