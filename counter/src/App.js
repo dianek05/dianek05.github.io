@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Counter initValue={8} />
-      <Step />
+      <Step initStepValue={5} />
     </div>
   );
 }
